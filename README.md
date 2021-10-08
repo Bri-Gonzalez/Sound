@@ -8,21 +8,19 @@ Sound is a app where the user can sell or purchase audio tech. The user will be 
 
 ## Dependencies 
 <b>Back-End:</b>
-Express
-MongoDB
-Bcrypt
+- Express
+- MongoDB
+- Bcrypt
 
 <b>Front-End:</b>
-React
-React Router
-React-Router-Dom
-Axios
+- React
+- React Router
+- React-Router-Dom
+- Axios
 
 ## [Team Expectations](https://docs.google.com/document/d/1Bn4YaElpcLGPLhebpjtfwx3JY8-ktIi10z4a12WZJCw/edit)
 
-## Wireframes
-
-[Wireframes](https://www.figma.com/file/ClP5JIzhkLCLUwU3MgjqBS/SOUND?node-id=0%3A1)
+## [Wireframes](https://www.figma.com/file/ClP5JIzhkLCLUwU3MgjqBS/SOUND?node-id=0%3A1)
 
 Home Screen
 ![Home](https://res.cloudinary.com/dfryxohde/image/upload/v1633664867/SOUND/Home_ul7f72.png)
@@ -48,9 +46,8 @@ Create Product
 Edit Product
 ![Edit Product](https://res.cloudinary.com/dfryxohde/image/upload/v1633664867/SOUND/EditProduct_rleviu.png)
 
-## Flowchart
+## [Flowchart](https://whimsical.com/sound-9o94b77oTeUwTsQo83mibC)
 
-[Whimsical Flowchart](https://whimsical.com/sound-9o94b77oTeUwTsQo83mibC)
 ![Whimsical Flowchart](https://res.cloudinary.com/dfryxohde/image/upload/v1633701359/SOUND/Screen_Shot_2021-10-08_at_8.55.34_AM_b8z6fm.png)
 
 ## Schemas
