@@ -1,4 +1,6 @@
 # Sound
+<<<<<<< HEAD
+=======
 
 Turn Up The Volume, Turn Down The Prices
 
@@ -79,3 +81,4 @@ const User = new Schema(
 ```
 
 ## [GitHub Project Board](https://github.com/Bri-Gonzalez/Sound/projects/1)
+>>>>>>> 55e63299d891cd43b16636077ebff51f8e5318f8
