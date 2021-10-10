@@ -1,6 +1,6 @@
 # Sound
 
-Turn Up The Volume, Turn Down The Prices
+Turn Up The Volume
 
 ## Project Overview
 
@@ -26,28 +26,28 @@ Sound is a app where the user can sell or purchase audio tech. The user will be 
 ## [Wireframes](https://www.figma.com/file/ClP5JIzhkLCLUwU3MgjqBS/SOUND?node-id=0%3A1)
 
 Home Screen
-![Home](https://res.cloudinary.com/dfryxohde/image/upload/v1633712294/SOUND/Home_px9mam.png)
+![Home](https://res.cloudinary.com/dfryxohde/image/upload/v1633885123/SOUND/Home_rkbkxj.png)
 
 Products Page
-![Products](https://res.cloudinary.com/dfryxohde/image/upload/v1633712293/SOUND/Products_p7hv0y.png)
+![Products](https://res.cloudinary.com/dfryxohde/image/upload/v1633885121/SOUND/Products_gmhkwr.png)
 
 Product Details Page
-![Product Details](https://res.cloudinary.com/dfryxohde/image/upload/v1633712293/SOUND/ProductDetails_qbojts.png)
+![Product Details](https://res.cloudinary.com/dfryxohde/image/upload/v1633885121/SOUND/Details_ikpt9x.png)
 
 Create Account
-![Create Account](https://res.cloudinary.com/dfryxohde/image/upload/v1633712292/SOUND/CreateAccount_f2glfn.png)
+![Create Account](https://res.cloudinary.com/dfryxohde/image/upload/v1633885121/SOUND/CreateAccount_nh6f3i.png)
 
 Sign In
-![Sign In](https://res.cloudinary.com/dfryxohde/image/upload/v1633712293/SOUND/SignIn_kfgzus.png)
+![Sign In](https://res.cloudinary.com/dfryxohde/image/upload/v1633885121/SOUND/SignIn_twhewh.png)
 
 Home Screen When Logged In
-![Home Screen When Logged In](https://res.cloudinary.com/dfryxohde/image/upload/v1633712294/SOUND/SignInHome_zyfyvh.png)
+![Home Screen When Logged In](https://res.cloudinary.com/dfryxohde/image/upload/v1633885125/SOUND/HomeLoggedIn_lysnu7.png)
 
 Add Product
-![Add Product](https://res.cloudinary.com/dfryxohde/image/upload/v1633712292/SOUND/AddProduct_maep9z.png)
+![Add Product](https://res.cloudinary.com/dfryxohde/image/upload/v1633885121/SOUND/AddProduct_xgzqss.png)
 
 Edit Product
-![Edit Product](https://res.cloudinary.com/dfryxohde/image/upload/v1633712292/SOUND/EditProduct_daw1j5.png)
+![Edit Product](https://res.cloudinary.com/dfryxohde/image/upload/v1633885121/SOUND/EditProduct_o0vm2r.png)
 
 ## [Component Hierarchy](https://whimsical.com/sound-9o94b77oTeUwTsQo83mibC)
 
@@ -75,7 +75,8 @@ const Product = new Schema(
 ```
 const User = new Schema(
   {
-    username: { type: String, required: true },
+    firstname: { type: String, required: true },
+    lastname: { type: String, required: true },
     email: { type: String, required: true },
     password_digest: { type: String, required: true, select: false },
   },
