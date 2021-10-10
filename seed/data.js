@@ -4,12 +4,12 @@ import User from '../models/user.js'
 import bcrypt from 'bcrypt'
 
 const insertData = async () => {
-  
+
   await db.dropDatabase()
 
   //USERS
   const user1 = new User({
-    fistname: 'axel',
+    firstname: 'axel',
     lastname: 'mora',
     email: 'axel@email.com',
     password_digest: await bcrypt.hash('!a$ecureP@ssw0Rd55!', 11)

@@ -6,7 +6,7 @@ const User = new Schema(
     firstname: { type: String, required: true, },
     lastname: { type: String, required: true, },
     email: { type: String, required: true, },
-    password_digest: { type: String, requried: true, select: false },
+    password_digest: { type: String, required: true, select: false },
   },
   { timestamps: true }
 )
