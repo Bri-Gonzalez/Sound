@@ -49,8 +49,8 @@ export const signIn = async (req, res) => {
     if (await bcrypt.compare(password, user.password_digest)) {
       const payload = {
         id: user._id,
-        firstname: user.firstname,
-        lastname: user.lastname,
+        // firstname: user.firstname,
+        // lastname: user.lastname,
         email: user.email,
         exp: parseInt(exp.getTime() / 1000),
       }
