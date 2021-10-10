@@ -1,18 +1,21 @@
 # Sound
 
-Turn Up The Volume, Turn Down The Prices
+Turn Up The Volume
 
 ## Project Overview
 
-Sound is a app where the user can sell or purchase audio tech. The user will be able to see available products and their details. Once the user creates an account, they can sell their own audio products by adding them to the app. 
+Sound is a app where the user can sell or purchase audio tech. The user will be able to see available products and their details. Once the user creates an account, they can sell their own audio products by adding them to the app.
 
-## Dependencies 
+## Dependencies
+
 <b>Back-End:</b>
+
 - Express
 - MongoDB
 - Bcrypt
 
 <b>Front-End:</b>
+
 - React
 - React Router
 - React-Router-Dom
@@ -23,36 +26,37 @@ Sound is a app where the user can sell or purchase audio tech. The user will be 
 ## [Wireframes](https://www.figma.com/file/ClP5JIzhkLCLUwU3MgjqBS/SOUND?node-id=0%3A1)
 
 Home Screen
-![Home](https://res.cloudinary.com/dfryxohde/image/upload/v1633664867/SOUND/Home_ul7f72.png)
+![Home](https://res.cloudinary.com/dfryxohde/image/upload/v1633885123/SOUND/Home_rkbkxj.png)
 
 Products Page
-![Products](https://res.cloudinary.com/dfryxohde/image/upload/v1633664867/SOUND/Products_dvoiuh.png)
+![Products](https://res.cloudinary.com/dfryxohde/image/upload/v1633885121/SOUND/Products_gmhkwr.png)
 
 Product Details Page
-![Product Details](https://res.cloudinary.com/dfryxohde/image/upload/v1633664866/SOUND/Details_bzyxwr.png)
+![Product Details](https://res.cloudinary.com/dfryxohde/image/upload/v1633885121/SOUND/Details_ikpt9x.png)
 
 Create Account
-![Create Account](https://res.cloudinary.com/dfryxohde/image/upload/v1633664866/SOUND/CreateAccount_yuk0o4.png)
+![Create Account](https://res.cloudinary.com/dfryxohde/image/upload/v1633885121/SOUND/CreateAccount_nh6f3i.png)
 
 Sign In
-![Sign In](https://res.cloudinary.com/dfryxohde/image/upload/v1633664866/SOUND/SignIn_mc8vhm.png)
+![Sign In](https://res.cloudinary.com/dfryxohde/image/upload/v1633885121/SOUND/SignIn_twhewh.png)
 
 Home Screen When Logged In
-![Home Screen When Logged In](https://res.cloudinary.com/dfryxohde/image/upload/v1633664867/SOUND/LoggedInHome_hebytu.png)
+![Home Screen When Logged In](https://res.cloudinary.com/dfryxohde/image/upload/v1633885125/SOUND/HomeLoggedIn_lysnu7.png)
 
-Create Product
-![Create Product](https://res.cloudinary.com/dfryxohde/image/upload/v1633664866/SOUND/CreateProduct_xe42wm.png)
+Add Product
+![Add Product](https://res.cloudinary.com/dfryxohde/image/upload/v1633885121/SOUND/AddProduct_xgzqss.png)
 
 Edit Product
-![Edit Product](https://res.cloudinary.com/dfryxohde/image/upload/v1633664867/SOUND/EditProduct_rleviu.png)
+![Edit Product](https://res.cloudinary.com/dfryxohde/image/upload/v1633885121/SOUND/EditProduct_o0vm2r.png)
 
-## [Flowchart](https://whimsical.com/sound-9o94b77oTeUwTsQo83mibC)
+## [Component Hierarchy](https://whimsical.com/sound-9o94b77oTeUwTsQo83mibC)
 
-![Whimsical Flowchart](https://res.cloudinary.com/dfryxohde/image/upload/v1633701359/SOUND/Screen_Shot_2021-10-08_at_8.55.34_AM_b8z6fm.png)
+![Whimsical Flowchart](https://res.cloudinary.com/dfryxohde/image/upload/v1633712293/SOUND/ComponentHierarchy_eosb9s.png)
 
 ## Schemas
 
 <b>Product:</b>
+
 ```
 const Product = new Schema(
   {
@@ -67,10 +71,12 @@ const Product = new Schema(
 ```
 
 <b>User:</b>
+
 ```
 const User = new Schema(
   {
-    username: { type: String, required: true },
+    firstname: { type: String, required: true },
+    lastname: { type: String, required: true },
     email: { type: String, required: true },
     password_digest: { type: String, required: true, select: false },
   },
