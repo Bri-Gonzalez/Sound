@@ -6,74 +6,74 @@ import { AZ, ZA, lowestFirst, highestFirst } from '../../utils/sort'
 import { getProducts } from '../../services/products'
 
 export default function Products(props) {
-   const [products, setProducts] = useState([])
-   const [searchResult, setSearchResult] = useState([])
-   const [applySort, setApplySort] = useState(false)
-   const [sortType, setSortType] = useState('name-ascending')
+  const [products, setProducts] = useState([])
+  const [searchResult, setSearchResult] = useState([])
+  const [applySort, setApplySort] = useState(false)
+  const [sortType, setSortType] = useState('name-ascending')
 
-   useEffect(() => {
+  useEffect(() => {
       const fetchProducts = async () => {
-         const allProducts = await getProducts()
-         setProducts(allProducts)
-         setSearchResult(allProducts)
+        const allProducts = await getProducts()
+        setProducts(allProducts)
+        setSearchResult(allProducts)
       }
       fetchProducts()
-   }, [])
+  }, [])
 
-   const handleSort = (type) => {
+  const handleSort = (type) => {
       if (type !== '' && type !== undefined) {
-         setSortType(type)
+        setSortType(type)
       }
       switch (type) {
-         case 'name-ascending':
+        case 'name-ascending':
             setSearchResult(AZ(searchResult))
             break
-         case 'name-descending':
+        case 'name-descending':
             setSearchResult(ZA(searchResult))
             break
-         case 'price-ascending':
+        case 'price-ascending':
             setSearchResult(lowestFirst(searchResult))
             break
-         case 'price-descending':
+        case 'price-descending':
             setSearchResult(highestFirst(searchResult))
             break
-         default:
+        default:
             break
       }
-   }
+  }
 
-   if (applySort) {
+  if (applySort) {
       handleSort(sortType)
       setApplySort(false)
-   }
+  }
 
-   const handleSearch = (e) => {
+  const handleSearch = (e) => {
       const results = products.filter((product) => 
-         product.name.toLowerCase().includes(e.target.value.toLowerCase())
+        product.name.toLowerCase().includes(e.target.value.toLowerCase())
       )
       setSearchResult(results)
       setApplySort(true)
-   }
+  }
 
-   const handleSubmit = (e) => e.preventDefault()
+  const handleSubmit = (e) => e.preventDefault()
 
-   return (
+  return (
       <Layout user={props.user}>
-         <Search onSubmit={handleSubmit} handleSearch={handleSearch} />
-         <Sort onSubmit={handleSubmit} handleSort={handleSort} />
-         <div className='products'>
+        <Search onSubmit={handleSubmit} handleSearch={handleSearch} />
+        <Sort onSubmit={handleSubmit} handleSort={handleSort} />
+        <div className='products'>
             {searchResult.map((product, index) => {
-               return (
+              return (
                   <Product
-                     _id={product._id}
-                     name={product.name}
-                     imgURL={product.imgURL}
-                     price={product.price}
-                     key={index}
+                    _id={product._id}
+                    name={product.name}
+                    imgURL={product.imgURL}
+                    price={product.price}
+                    key={index}
                   />
-               )
+              )
             })}
-         </div>
+        </div>
       </Layout>
-   )
+  )
 }
