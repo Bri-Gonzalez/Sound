@@ -106,7 +106,7 @@ const insertData = async () => {
     },
     {
       name: 'HIGHLINE BOBBY S',
-      price: '4,998.00',
+      price: '4998.00',
       details:
         'Stein Music’s smallest hornloudspeaker of the High Line family, with similar qualities as the big ones and an astonishing price/performance ratio. The High Line “Bobby” S is a compact full range hornspeaker with 80 watt sinusoidal power handling.',
       imgURL:
