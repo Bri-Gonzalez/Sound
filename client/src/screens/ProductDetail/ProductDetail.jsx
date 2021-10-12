@@ -4,11 +4,13 @@ import { Layout } from '../../components'
 import { getProduct, deleteProduct } from '../../services/products'
 import { useParams, Link } from 'react-router-dom'
 import { FaEdit, FaTrash } from 'react-icons/fa'
+import {useHistory} from 'react-router'
 
 const ProductDetail = (props) => {
   const [product, setProduct] = useState(null)
   const [isLoaded, setLoaded] = useState(false)
   const { id } = useParams()
+  const history = useHistory()
 
   useEffect(() => {
     const fetchProduct = async () => {
@@ -21,6 +23,15 @@ const ProductDetail = (props) => {
 
   if (!isLoaded) {
     return <h1>Loading...</h1>
+  }
+
+  const handleDelete = async () => {
+    if (props.user) {
+      await deleteProduct(product._id)
+      history.push('/products')
+    } else {
+      history.push('/sign-up')
+    }
   }
 
   return (
@@ -42,7 +53,7 @@ const ProductDetail = (props) => {
             </Link>
             <button
               className='delete-button'
-              onClick={() => deleteProduct(product._id)}
+              onClick={(handleDelete)}
             >
               <FaTrash />
             </button>

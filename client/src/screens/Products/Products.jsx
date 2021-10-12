@@ -1,6 +1,5 @@
 import './Products.css'
 import { useState, useEffect } from 'react'
-
 import { Layout, Product, Search, Sort } from '../../components'
 import { AZ, ZA, lowestFirst, highestFirst } from '../../utils/sort'
 import { getProducts } from '../../services/products'

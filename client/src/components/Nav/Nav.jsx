@@ -11,6 +11,7 @@ const authenticatedOptions = (
     </NavLink>
   </>
 )
+
 const unauthenticatedOptions = (
   <>
     <NavLink className='link' to='/sign-up'>
@@ -21,6 +22,7 @@ const unauthenticatedOptions = (
     </NavLink>
   </>
 )
+
 const alwaysOptions = (
   <>
     <NavLink className='link' to='/products'>
@@ -28,6 +30,7 @@ const alwaysOptions = (
     </NavLink>
   </>
 )
+
 export default function Nav({ user }) {
   return (
     <nav>
