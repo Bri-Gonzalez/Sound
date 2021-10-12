@@ -44,9 +44,9 @@ const ProductEdit = (props) => {
 
   return (
     <Layout user={props.user}>
-      <div className='edit-form'>
-        <h2>Edit Product</h2>
-        <form onSubmit={handleSubmit}>
+      <div>
+        <h2>EDIT PRODUCT</h2>
+        <form className='input-form' onSubmit={handleSubmit}>
           <input
             className='input-name'
             placeholder='NAME'
@@ -75,7 +75,7 @@ const ProductEdit = (props) => {
             onChange={handleChange}
           />
           <input
-            className='edit-img'
+            className='input-img'
             placeholder='IMAGE'
             value={product.imgURL}
             name='imgURL'
@@ -83,7 +83,7 @@ const ProductEdit = (props) => {
             onChange={handleChange}
           />
           <input
-            className='edit-email'
+            className='input-email'
             placeholder='EMAIL'
             value={product.email}
             name='email'

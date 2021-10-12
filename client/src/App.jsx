@@ -35,6 +35,15 @@ function App() {
       <Route exact path='/products/:id/edit'>
         {user ? <ProductEdit user={user} /> : <Redirect to='/' />}
       </Route>
+      <Route path='/add-product'>
+      {user ? <ProductCreate user={user} /> : <Redirect to='/sign-up' />}
+      </Route>
+      <Route path='/sign-up'>
+        <SignUp setUser={setUser}/>
+      </Route>
+      <Route path='/sign-in'>
+        <SignIn setUser={setUser}/>
+      </Route>
     </div>
   )
 }
