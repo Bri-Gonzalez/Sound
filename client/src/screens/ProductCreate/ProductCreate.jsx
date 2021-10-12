@@ -5,35 +5,35 @@ import { Redirect } from 'react-router-dom'
 import { createProduct } from '../../services/products'
 
 export default function ProductCreate(props) {
-   const [product, setProduct] = useState({
+  const [product, setProduct] = useState({
       name: '',
       details: '',
       price: '',
       imgURL: '',
       email: '',
-   })
+  })
 
-   const [isCreated, setCreated] = useState(false)
+  const [isCreated, setCreated] = useState(false)
 
-   const handleChange = (e) => {
+  const handleChange = (e) => {
       const { name, value } = e.target
       setProduct({
-         ...product,
-         [name]: value,
+        ...product,
+        [name]: value,
       })
-   }
+  }
 
-   const handleSubmit = async (e) => {
+  const handleSubmit = async (e) => {
       e.preventDefault()
       const created = await createProduct(product)
       setCreated({ created })
-   }
+  }
 
-   if (isCreated) {
+  if (isCreated) {
       return <Redirect to={`/products`} />
-   }
+  }
 
-   return (
+  return (
       <Layout user={props.user}>
       <div>
         <h2>ADD PRODUCT</h2>
@@ -87,5 +87,5 @@ export default function ProductCreate(props) {
         </form>
       </div>
     </Layout>
-   )
+  )
 }

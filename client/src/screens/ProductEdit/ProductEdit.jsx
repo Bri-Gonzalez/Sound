@@ -3,7 +3,6 @@ import './ProductEdit.css'
 import { useParams, Redirect } from 'react-router-dom'
 import { Layout } from '../../components'
 import { getProduct, updateProduct } from '../../services/products'
-import Products from '../Products/Products'
 
 const ProductEdit = (props) => {
   const [product, setProduct] = useState({

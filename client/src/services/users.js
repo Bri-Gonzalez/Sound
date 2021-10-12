@@ -2,50 +2,50 @@ import api from './apiConfig'
 import jwtDecode from 'jwt-decode'
 
 export const signUp = async (credentials) => {
-   try {
+  try {
       const res = await api.post('/sign-up', credentials)
       localStorage.setItem('token', res.data.token)
       const user = jwtDecode(res.data.token)
       return user
-   } catch (error) {
+  } catch (error) {
       throw error
-   }
+  }
 }
 
 export const signIn = async (credentials) => {
-   try {
+  try {
       const res = await api.post('/sign-in', credentials)
       localStorage.setItem('token', res.data.token)
       const user = jwtDecode(res.data.token)
       return user
-   } catch (error) {
+  } catch (error) {
       throw error
-   }
+  }
 }
 
-export const singOut = async () => {
-   try {
+export const signOut = async () => {
+  try {
       localStorage.removeItem('token')
       return true
-   } catch (error) {
+  } catch (error) {
       throw error
-   }
+  }
 }
 
 export const changePassword = async (passwords, user) => {
-   try {
+  try {
       const res = await api.post('/')
       return res.data
-   } catch (error) {
+  } catch (error) {
       throw error
-   }
+  }
 }
 
 export const verifyUser = async () => {
-   const token = localStorage.getItem('token')
-   if(token) {
+  const token = localStorage.getItem('token')
+  if(token) {
       const res = await api.get('/verify')
       return res.data
-   }
-   return false
+  }
+  return false
 }

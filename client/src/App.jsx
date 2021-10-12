@@ -7,6 +7,7 @@ import ProductEdit from './screens/ProductEdit/ProductEdit'
 import ProductDetail from './screens/ProductDetail/ProductDetail'
 import SignUp from './screens/SignUp/SignUp'
 import SignIn from './screens/SignIn/SignIn'
+import SignOut from './screens/SignOut/SignOut'
 import { Route, Redirect } from 'react-router-dom'
 import { verifyUser } from './services/users'
 
@@ -33,7 +34,7 @@ function App() {
         <ProductDetail user={user} />
       </Route>
       <Route exact path='/products/:id/edit'>
-        {user ? <ProductEdit user={user} /> : <Redirect to='/' />}
+        {user ? <ProductEdit user={user} /> : <Redirect to='/sign-up' />}
       </Route>
       <Route path='/add-product'>
       {user ? <ProductCreate user={user} /> : <Redirect to='/sign-up' />}
@@ -43,6 +44,9 @@ function App() {
       </Route>
       <Route path='/sign-in'>
         <SignIn setUser={setUser}/>
+      </Route>
+      <Route path='/sign-out'>
+        {user ? <SignOut setUser={setUser} /> : <Redirect to='/sign-up' />}
       </Route>
     </div>
   )
