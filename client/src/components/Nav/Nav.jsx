@@ -43,7 +43,7 @@ export default function Nav({ user }) {
         </NavLink>
         <div className='links'>
           {user && (
-            <div className='link welcome'>Welcome, {user.firstname} </div>
+            <div className='link-welcome'>Welcome, {user.firstname} </div>
           )}
           {alwaysOptions}
           {user ? authenticatedOptions : unauthenticatedOptions}
