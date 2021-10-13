@@ -78,7 +78,7 @@ const insertData = async () => {
       email: 'susan@email.com',
     },
     {
-      name: 'Soundcore Liberty Air 2 Pro',
+      name: 'Liberty Air 2 Pro',
       price: '129.99',
       details:
         'Soundcore Liberty Air 2 Pro are an incredibly advanced pair of wireless earbuds. With up to 26 hours of total play time off of one charge, you can experience your favorite music at all times of the day. Purenote technology allows for a higher quality listening experience, active noise cancelling technology cancels out outside noises intelligently, while HearID provides EQ customization. All three come together to make sure your listening experience is truly yours.',

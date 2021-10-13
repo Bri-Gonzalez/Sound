@@ -1,5 +1,5 @@
 .nav {
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   display: flex;
   height: 120px;
   width: 100%;
@@ -7,8 +7,10 @@
   color: white;
   justify-content: space-between;
   align-items: center;
-  border-bottom: 3px solid #A100FF;
+  border-bottom: 3px solid #a100ff;
   position: fixed;
+  top: 0;
+  z-index: 5;
 }
 
 .nav a {
@@ -19,7 +21,7 @@
 }
 
 .nav a:hover {
-  color: #6295F2;
+  color: #6b9af0;
 }
 
 .logo img {
