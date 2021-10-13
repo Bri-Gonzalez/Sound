@@ -1,0 +1,64 @@
+.footer {
+   display: inline-flex;
+   width: 100%;
+   justify-content: space-evenly;
+   align-items: center;
+   height: 300px;
+   background-color: black;
+   color: white;
+   border-top: 3px solid #A100FF;
+}
+
+.footer a {
+   text-decoration: none;
+   color: white;
+   transition: 250ms;
+}
+
+.footer a:hover {
+   color: #6295F2;
+   transform: scale(1.1);
+}
+
+.team-container {
+   display: flex;
+   flex-direction: column;
+   letter-spacing: 1px;
+}
+
+.team-container p {
+   font-size: 20px;
+}
+
+.team-container a {
+   margin: 20px 0;
+}
+
+.made-by-devs p {
+   margin: 35px 0;
+   font-size: 24px;
+}
+
+.sitemap {
+   display: flex;
+   flex-direction: column;
+   letter-spacing: 1px;
+}
+
+.sitemap p {
+   font-size: 20px;
+}
+
+.sitemap a {
+   margin: 20px 0;
+}
+
+.footer-logo {
+   width: 150px;
+   margin-right: 20px; 
+}
+
+.footer-github {
+   width: 50px;
+   margin-left: 20px; 
+}
