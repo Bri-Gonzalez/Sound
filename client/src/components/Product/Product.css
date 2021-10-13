@@ -1,3 +1,33 @@
+.product-list {
+  margin: 25px;
+}
+
+.product {
+  text-decoration: none;
+  color: black;
+}
+
 .product-img {
-  width: 50px;
+  width: 240px;
+  border-radius: 5px;
+  box-shadow: rgba(33, 35, 38, 0.1) 0px 10px 10px -10px;
+}
+
+.product-img:hover {
+  transform: scale(1.03);
+  transition-duration: 0.55s;
+  cursor: pointer;
+  position: relative;
+}
+
+.product-name {
+  font-size: 18px;
+  color: black;
+  margin: 10px 0;
+}
+
+.price {
+  font-size: 18px;
+  color: black;
+  margin: 10px 0;
 }
