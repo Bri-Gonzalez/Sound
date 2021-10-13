@@ -43,7 +43,7 @@ const ProductEdit = (props) => {
 
   return (
     <Layout user={props.user}>
-      <div>
+      <div className='product-edit'>
         <h2>EDIT PRODUCT</h2>
         <form className='input-form' onSubmit={handleSubmit}>
           <input
