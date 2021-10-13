@@ -1,0 +1,21 @@
+.signup-container {
+  margin: 180px 0 80px 0;
+  display: flex;
+  justify-content: center;
+}
+.first-last-name {
+  justify-content: space-evenly;
+}
+.first-last-name input {
+  height: 40px;
+  width: 320px;
+  margin: 10px;
+}
+.credentials {
+  display: flex;
+  flex-direction: column;
+}
+.credentials input {
+  height: 40px;
+  width: 660px;
+}
