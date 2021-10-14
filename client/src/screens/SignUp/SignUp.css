@@ -1,21 +1,62 @@
 .signup-container {
   margin: 180px 0 80px 0;
-  display: flex;
-  justify-content: center;
+}
+.signup-container h3 {
+  font-size: 40px;
+  font-style: italic;
 }
 .first-last-name {
-  justify-content: space-evenly;
+  display: flex;
+  justify-content: center;
 }
 .first-last-name input {
   height: 40px;
   width: 320px;
   margin: 10px;
+  padding: 10px 10px 10px 15px;
+  background-color: rgb(209, 209, 209);
+  border: none;
+  border-radius: 5px;
+  font-size: 15px;
 }
+.first-last-name input:focus {
+  outline-color: black;
+}
+.first-last-name ::placeholder {
+  color: black;
+}
+
 .credentials {
   display: flex;
+  align-items: center;
+  justify-content: center;
   flex-direction: column;
 }
 .credentials input {
   height: 40px;
-  width: 660px;
+  width: 687px;
+  margin: 10px;
+  padding: 10px 10px 10px 15px;
+  background-color: rgb(209, 209, 209);
+  border: none;
+  border-radius: 5px;
+  font-size: 15px;
+}
+.credentials input:focus {
+  outline-color: black;
+}
+.credentials ::placeholder {
+  color: black;
+}
+.create-account-btn {
+  background-color: #6295f2;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  font-size: 15px;
+  font-style: italic;
+  font-family: 'Roboto', sans-serif;
+  width: 170px;
+  height: 60px;
+  margin: 20px 0 20px 0;
 }

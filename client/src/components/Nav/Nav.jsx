@@ -37,7 +37,7 @@ export default function Nav({ user }) {
       <div className='nav'>
         <NavLink className='logo' to='/'>
           <img
-            src='https://res.cloudinary.com/dfryxohde/image/upload/v1633966668/SOUND/sound_vivbtp.png'
+            src='https://res.cloudinary.com/dfryxohde/image/upload/v1634164807/SOUND/sound_1_xuavxa.png'
             alt='sound-logo'
           />
         </NavLink>
