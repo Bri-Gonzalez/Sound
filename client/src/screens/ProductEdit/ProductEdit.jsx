@@ -45,7 +45,7 @@ const ProductEdit = (props) => {
     <Layout user={props.user}>
       <div className='product-edit'>
         <h2>EDIT PRODUCT</h2>
-        <form className='input-form' onSubmit={handleSubmit}>
+        <form onSubmit={handleSubmit}>
           <input
             className='input-name'
             placeholder='NAME'
@@ -63,21 +63,19 @@ const ProductEdit = (props) => {
             required
             onChange={handleChange}
           />
-          <textarea
-            className='textarea-details'
-            rows={10}
-            cols={50}
-            placeholder='DETAILS'
-            value={product.details}
-            name='details'
-            required
-            onChange={handleChange}
-          />
           <input
             className='input-img'
             placeholder='IMAGE'
             value={product.imgURL}
             name='imgURL'
+            required
+            onChange={handleChange}
+          />
+          <textarea
+            className='textarea-details'
+            placeholder='DETAILS'
+            value={product.details}
+            name='details'
             required
             onChange={handleChange}
           />

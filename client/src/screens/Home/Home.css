@@ -1,6 +1,6 @@
 .header-img {
   position: relative;
-  z-index: -1;
+  /* z-index: -1; */
 }
 
 .header-img img {
@@ -12,12 +12,12 @@
 .slogan-container {
   background-color: rgba(0, 0, 0, 0.2);
   position: absolute;
-  top: 40%;
+  top: 30%;
   left: 40px;
   padding: 20px;
   color: white;
   text-align: left;
-  z-index: 1;
+  /* z-index: 1; */
   font-weight: bolder;
   letter-spacing: 1px;
 }
@@ -32,18 +32,27 @@
   margin-top: 20px;
 }
 
-.slogan-container button {
+.shop-now-btn {
   background-color: #6295f2;
   color: white;
   border: none;
   border-radius: 10px;
   font-size: 18px;
   font-style: italic;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   width: 170px;
   height: 60px;
   margin-bottom: 20px;
+  -webkit-transition: ease-out 0.4s;
+  -moz-transition: ease-out 0.4s;
+  transition: ease-out 0.4s;
 }
+
+.shop-now-btn:hover {
+  cursor: pointer;
+  box-shadow: inset 400px 50px 0 0 #a100ff;
+}
+
 .body-imgs {
   display: flex;
   width: 100%;
@@ -57,4 +66,126 @@
 .body-imgs img {
   width: 25vw;
   display: block;
+}
+
+@media only screen and (max-width: 1150px) {
+  .slogan-container h1 {
+    font-size: 40px;
+    width: 385px;
+  }
+
+  .slogan-container h4 {
+    font-size: 18px;
+  }
+
+  .shop-now-btn {
+    width: 140px;
+    height: 50px;
+  }
+}
+
+@media only screen and (max-width: 1080px) {
+  .slogan-container {
+    top: 36%;
+    left: 40px;
+    padding: 15px;
+  }
+
+  .slogan-container h1 {
+    font-size: 30px;
+    width: 310px;
+  }
+
+  .slogan-container h4 {
+    font-size: 15px;
+  }
+
+  .shop-now-btn {
+    width: 100px;
+    height: 45px;
+    font-size: 13px;
+  }
+}
+
+@media only screen and (max-width: 750px) {
+  .header-img img {
+    height: auto;
+    margin-top: 120px;
+  }
+
+  .slogan-container {
+    background-color: rgba(0, 0, 0, 0.303);
+    top: 10%;
+    left: 50px;
+    right: 50px;
+    align-items: center;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .slogan-container h1 {
+    font-size: 32px;
+    margin-top: 10px;
+  }
+
+  .slogan-container h4 {
+    font-size: 15px;
+    margin-top: 12px;
+  }
+
+  .shop-now-btn {
+    margin-bottom: 10px;
+    width: 90px;
+    height: 40px;
+    font-size: 13px;
+  }
+
+  .body-imgs {
+    display: flex;
+    flex-direction: row;
+    flex-flow: row wrap;
+  }
+
+  .body-imgs-link {
+    display: flex;
+    flex-direction: row;
+    flex-flow: row wrap;
+    width: 50%;
+  }
+
+  .body-imgs img {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 470px) {
+  .slogan-container h1 {
+    font-size: 30px;
+  }
+}
+
+@media only screen and (max-width: 435px) {
+  .slogan-container {
+    width: 250px;
+    left: 20px;
+    right: 20px;
+  }
+  .slogan-container h1 {
+    margin: 0;
+    font-size: 20px;
+  }
+
+  .slogan-container h4 {
+    font-size: 12px;
+    margin-top: 10px;
+  }
+
+  .shop-now-btn {
+    margin: 0;
+    width: 80px;
+    height: 30px;
+    font-size: 12px;
+  }
 }

@@ -48,7 +48,7 @@ export default function SignUp(props) {
     if (form.isError) {
       return (
         <button type='submit' className={toggleForm}>
-          {form.errorMsg}
+          <span>{form.errorMsg}</span>
         </button>
       )
     } else {

@@ -33,7 +33,7 @@ export default function SignIn(props) {
       console.error(error)
       setForm({
         isError: true,
-        errorMsg: 'Invalid Credentials',
+        errorMsg: 'INVALID CREDENTIALS',
         email: '',
         password: '',
       })
@@ -45,7 +45,7 @@ export default function SignIn(props) {
     if (form.isError) {
       return (
         <button type='submit' className={toggleForm}>
-          {form.errorMsg}
+          <span>{form.errorMsg}</span>
         </button>
       )
     } else {

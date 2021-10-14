@@ -5,10 +5,12 @@
   align-items: center;
   justify-content: space-evenly;
 }
+
 .signin-form-container form {
   display: flex;
   flex-direction: column;
 }
+
 .signin-form-container input {
   width: 460px;
   height: 40px;
@@ -19,6 +21,7 @@
   border-radius: 5px;
   font-size: 15px;
 }
+
 .signin-form-container h3 {
   font-size: 40px;
   font-style: italic;
@@ -27,6 +30,7 @@
 .signin-form-container ::placeholder {
   color: black;
 }
+
 .signin-form-container input:focus {
   outline-color: black;
 }
@@ -39,17 +43,28 @@
   border-radius: 10px;
   font-size: 15px;
   font-style: italic;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   width: 170px;
   height: 60px;
   margin: 20px 0 20px 0;
+  -webkit-transition: ease-out 0.4s;
+  -moz-transition: ease-out 0.4s;
+  transition: ease-out 0.4s;
 }
+
+.sign-in-btn:hover {
+  cursor: pointer;
+  box-shadow: inset 400px 50px 0 0 #a100ff;
+}
+
 .signup-container {
   margin-bottom: 190px;
 }
+
 .signup-container h3 {
   font-size: 22px;
 }
+
 .new-customer-btn {
   align-self: center;
   background-color: #6295f2;
@@ -58,8 +73,46 @@
   border-radius: 10px;
   font-size: 15px;
   font-style: italic;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   width: 350px;
   height: 60px;
   margin: 20px 0 20px 0;
+  -webkit-transition: ease-out 0.4s;
+  -moz-transition: ease-out 0.4s;
+  transition: ease-out 0.4s;
+}
+
+.new-customer-btn:hover {
+  cursor: pointer;
+  box-shadow: inset 400px 50px 0 0 #a100ff;
+}
+
+.signin-container .danger {
+  align-self: center;
+  background-color: #e57373;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  font-size: 15px;
+  font-style: italic;
+  font-family: "Roboto", sans-serif;
+  width: 200px;
+  height: 60px;
+  margin: 20px 0 20px 0;
+  -webkit-transition: ease-out 0.4s;
+  -moz-transition: ease-out 0.4s;
+  transition: ease-out 0.4s;
+}
+
+.signin-container .danger:hover {
+  cursor: pointer;
+  box-shadow: inset 400px 50px 0 0 #6295f2;
+}
+
+.signin-container .danger:hover span {
+  display: none;
+}
+
+.signin-container .danger:hover:before {
+  content: "SIGN IN";
 }
