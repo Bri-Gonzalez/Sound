@@ -46,8 +46,18 @@
   margin: 10px;
   font-size: 30px;
 }
+.edit-button:hover {
+  transform: scale(1.1);
+  transition-duration: 0.3s;
+  cursor: pointer;
+}
 .delete-button {
   color: black;
   margin: 10px;
   font-size: 28px;
+}
+.delete-button:hover {
+  transform: scale(1.1);
+  transition-duration: 0.3s;
+  cursor: pointer;
 }

@@ -35,9 +35,9 @@ export default function ProductCreate(props) {
 
   return (
       <Layout user={props.user}>
-      <div>
+      <div className='add-product-container'>
         <h2>ADD PRODUCT</h2>
-        <form className='input-form' onSubmit={handleSubmit}>
+        <form onSubmit={handleSubmit}>
           <input
             className='input-name'
             placeholder='NAME'
@@ -55,6 +55,14 @@ export default function ProductCreate(props) {
             required
             onChange={handleChange}
           />
+          <input
+            className='input-img'
+            placeholder='IMAGE'
+            value={product.imgURL}
+            name='imgURL'
+            required
+            onChange={handleChange}
+          />
           <textarea
             className='textarea-details'
             rows={10}
@@ -66,14 +74,6 @@ export default function ProductCreate(props) {
             onChange={handleChange}
           />
           <input
-            className='input-img'
-            placeholder='IMAGE'
-            value={product.imgURL}
-            name='imgURL'
-            required
-            onChange={handleChange}
-          />
-          <input
             className='input-email'
             placeholder='EMAIL'
             value={product.email}
@@ -81,7 +81,7 @@ export default function ProductCreate(props) {
             required
             onChange={handleChange}
           />
-          <button type='submit' className='save-btn'>
+          <button type='submit' className='sell-btn'>
             SELL
           </button>
         </form>
