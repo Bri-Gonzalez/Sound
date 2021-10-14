@@ -15,9 +15,9 @@ export default function Home(props) {
       </div>
       <div className='body-imgs'>
         <Link to='/products' className='body-imgs-link'><img src='https://res.cloudinary.com/dfryxohde/image/upload/v1634141563/SOUND/stereo-sound-speaker-neon-colored-background_77190-6921_h84lhk.png' alt='stereo'/></Link>
-        <Link to='/products' className='body-imgs-link'><img src='https://res.cloudinary.com/dfryxohde/image/upload/v1633665086/SOUND/nikolai-chernichenko-QOLyehGXRyA-unsplash_ras0gy.jpg' alt='soundboard' /></Link>
-        <Link to='/products' className='body-imgs-link'><img src='https://res.cloudinary.com/dfryxohde/image/upload/v1633665085/SOUND/studio-microphone-pop-shield-mic-empty-recording-studio_43263-2762_vxhez0.jpg' alt='microphone' /></Link>
-        <Link to='/products' className='body-imgs-link'><img src='https://res.cloudinary.com/dfryxohde/image/upload/v1633665087/SOUND/fausto-sandoval-w5m3PIGvkqI-unsplash_p7lewj.jpg' alt='headphone' /></Link>
+        <Link to='/products' className='body-imgs-link'><img src='https://res.cloudinary.com/dfryxohde/image/upload/v1634250214/SOUND/audiomix625x416_r5qceh.jpg' alt='soundboard' /></Link>
+        <Link to='/products' className='body-imgs-link'><img src='https://res.cloudinary.com/dfryxohde/image/upload/v1634250214/SOUND/mic625x416_mda3i1.jpg' alt='microphone' /></Link>
+        <Link to='/products' className='body-imgs-link'><img src='https://res.cloudinary.com/dfryxohde/image/upload/v1634250214/SOUND/headphones625x416_kgborq.jpg' alt='headphone' /></Link>
       </div>
     </Layout>
   )
