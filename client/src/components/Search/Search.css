@@ -19,3 +19,9 @@
 .search-bar:focus {
   outline-color: black;
 }
+
+@media only screen and (max-width: 370px) {
+  .search-bar {
+    min-width: 230px;
+  }
+}
