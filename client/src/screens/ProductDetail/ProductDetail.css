@@ -12,6 +12,7 @@
 .detail-img img {
   width: 40vw;
   max-width: 500px;
+  min-width: 350px;
   border-radius: 5px;
 }
 
@@ -21,6 +22,7 @@
   text-align: left;
   margin: 0 0 50px 0;
   width: 40vw;
+  min-width: 175px;
 }
 
 .name {
@@ -91,5 +93,27 @@
   .detail {
     margin: 50px 0 0 0;
     text-align: center;
+    width: unset;
+  }
+
+  .name {
+    font-size: 40px;
   }
 }
+
+@media only screen and (max-width: 500px) {
+  .name {
+    font-size: 30px;
+  }
+
+  .detail-img img {
+    min-width: 180px;
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  .detail {
+    margin: unset;
+  }
+}
+
