@@ -84,7 +84,7 @@ export default function SignIn(props) {
             {renderError()}
           </form>
         </div>
-        <div className='signup-container'>
+        <div className='signup-container-create'>
           <h3>NEW CUSTOMER?</h3>
           <Link to='/sign-up'>
             <button className='new-customer-btn'>CREATE ACCOUNT</button>

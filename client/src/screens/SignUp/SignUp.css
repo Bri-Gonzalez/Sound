@@ -138,4 +138,22 @@
       width: 360px;
     }
   }
+  @media only screen and (max-width: 470px) {
+    .first-last-name input {
+      width: 300px;
+    }
+
+    .credentials input {
+      width: 300px;
+    }
+  }
+}
+@media only screen and (max-width: 375px) {
+  .first-last-name input {
+    width: 220px;
+  }
+
+  .credentials input {
+    width: 220px;
+  }
 }
