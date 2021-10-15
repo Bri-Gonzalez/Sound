@@ -64,3 +64,75 @@ textarea:focus {
   cursor: pointer;
   box-shadow: inset 400px 50px 0 0 #a100ff;
 }
+
+@media only screen and (max-width: 570px) {
+  
+  .product-edit h2 {
+    font-size: 36px;
+  }
+  
+  .product-edit input {
+    height: 35px;
+    width: 460px;
+  }
+  
+  .product-edit textarea {
+    width: 460px;
+    height: 90px;
+  }
+  
+  .product-edit input,
+  textarea {
+    margin: 10px;
+    padding: 10px 10px 10px 15px;
+    background-color: rgb(209, 209, 209);
+    border: none;
+    border-radius: 5px;
+    font-size: 15px;
+    font-family: "Roboto", sans-serif;
+  }
+  
+  .product-edit ::placeholder {
+    color: black;
+  }
+  
+  .save-btn {
+    background-color: #6295f2;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-size: 15px;
+    font-style: italic;
+    font-family: "Roboto", sans-serif;
+    width: 170px;
+    height: 60px;
+    margin: 20px 0 20px 0;
+    -webkit-transition: ease-out 0.4s;
+    -moz-transition: ease-out 0.4s;
+    transition: ease-out 0.4s;
+  }
+}
+
+@media only screen and (max-width: 470px) {
+  
+}
+
+@media only screen and (max-width: 440px) {
+  
+}
+
+@media only screen and (max-width: 423px) {
+ 
+}
+
+@media only screen and (max-width: 395px) {
+  
+}
+
+@media only screen and (max-width: 355px) {
+  
+}
+
+@media only screen and (max-width: 335px) {
+ 
+}
