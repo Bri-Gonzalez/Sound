@@ -175,8 +175,8 @@
   }
 
   .made-by-devs p {
-    margin: 30px 0;
-    font-size: 14px;
+    margin: 30px auto;
+    font-size: 12px;
   }
 
   .sitemap p {
@@ -188,11 +188,11 @@
   }
 
   .footer-logo {
-    margin-right: 12px;
+    margin: 0 auto;
   }
   
   .footer-github {
-    margin-left: 12px;
+    margin: 5px auto;
   }
 }
 
