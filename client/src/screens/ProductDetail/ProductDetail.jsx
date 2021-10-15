@@ -59,7 +59,6 @@ const ProductDetail = (props) => {
             <FaTrash
               className='delete-button'
               onClick={handleDelete}
-              // size='lg'
             />
           </div>
         </div>

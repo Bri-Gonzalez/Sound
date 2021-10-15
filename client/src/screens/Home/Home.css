@@ -7,10 +7,13 @@
   width: 100vw;
   padding: 0;
   display: block;
+  max-height: 970px;
+  object-fit: cover;
 }
 
 .slogan-container {
   background-color: rgba(0, 0, 0, 0.2);
+  border-radius: 3px;
   position: absolute;
   top: 30%;
   left: 40px;

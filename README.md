@@ -26,28 +26,28 @@ Sound is a app where the user can sell or purchase audio tech. The user will be 
 ## [Wireframes](https://www.figma.com/file/ClP5JIzhkLCLUwU3MgjqBS/SOUND?node-id=0%3A1)
 
 Home Screen
-![Home](https://res.cloudinary.com/dfryxohde/image/upload/v1633885123/SOUND/Home_rkbkxj.png)
+![Home](https://res.cloudinary.com/dfryxohde/image/upload/v1634270021/SOUND/Home_rkutbs.png)
 
 Products Page
-![Products](https://res.cloudinary.com/dfryxohde/image/upload/v1633885121/SOUND/Products_gmhkwr.png)
+![Products](https://res.cloudinary.com/dfryxohde/image/upload/v1634270021/SOUND/Products_npumjc.png)
 
 Product Details Page
-![Product Details](https://res.cloudinary.com/dfryxohde/image/upload/v1633885121/SOUND/Details_ikpt9x.png)
+![Product Details](https://res.cloudinary.com/dfryxohde/image/upload/v1634270021/SOUND/ProductDetails_clxqqt.png)
 
 Create Account
-![Create Account](https://res.cloudinary.com/dfryxohde/image/upload/v1633885121/SOUND/CreateAccount_nh6f3i.png)
+![Create Account](https://res.cloudinary.com/dfryxohde/image/upload/v1634270020/SOUND/CreateAccount_a7qwxc.png)
 
 Sign In
-![Sign In](https://res.cloudinary.com/dfryxohde/image/upload/v1633885121/SOUND/SignIn_twhewh.png)
+![Sign In](https://res.cloudinary.com/dfryxohde/image/upload/v1634270020/SOUND/SignIn_rsd6we.png)
 
 Home Screen When Logged In
-![Home Screen When Logged In](https://res.cloudinary.com/dfryxohde/image/upload/v1633885125/SOUND/HomeLoggedIn_lysnu7.png)
+![Home Screen When Logged In](https://res.cloudinary.com/dfryxohde/image/upload/v1634270021/SOUND/LoggedInHome_hrspbj.png)
 
 Add Product
-![Add Product](https://res.cloudinary.com/dfryxohde/image/upload/v1633885121/SOUND/AddProduct_xgzqss.png)
+![Add Product](https://res.cloudinary.com/dfryxohde/image/upload/v1634272628/SOUND/AddProduct_yjmtu8.png)
 
 Edit Product
-![Edit Product](https://res.cloudinary.com/dfryxohde/image/upload/v1633885121/SOUND/EditProduct_o0vm2r.png)
+![Edit Product](https://res.cloudinary.com/dfryxohde/image/upload/v1634272628/SOUND/EditProduct_gmjpcs.png)
 
 ## [Component Hierarchy](https://whimsical.com/sound-9o94b77oTeUwTsQo83mibC)
 
