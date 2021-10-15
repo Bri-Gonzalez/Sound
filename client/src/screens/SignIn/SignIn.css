@@ -12,8 +12,8 @@
 }
 
 .signin-form-container input {
-  width: 460px;
-  height: 40px;
+  width: 480px;
+  height: 60px;
   margin: 10px;
   padding: 10px 10px 10px 15px;
   background-color: rgb(209, 209, 209);
@@ -58,7 +58,7 @@
 }
 
 .signup-container-create {
-  margin-bottom: 190px;
+  margin-bottom: 20px;
 }
 
 .signup-container-create h3 {
@@ -128,7 +128,8 @@
   }
   .signup-container-create h3 {
     font-size: 40px;
-    margin-top: 40px;
+    font-style: italic;
+    margin-top: 80px;
   }
 }
 
@@ -139,6 +140,7 @@
 
   .signup-container-create h3 {
     font-size: 30px;
+    font-style: italic;
   }
   .new-customer-btn {
     width: 170px;
