@@ -111,6 +111,7 @@
 @media only screen and (max-width: 1070px) {
   .signup-container {
     margin-bottom: 180px;
+    margin-top: 100px;
   }
   .first-last-name {
     display: flex;
@@ -129,6 +130,9 @@
     .first-last-name input {
       width: 360px;
     }
+    .signup-container h3 {
+      font-size: 28px;
+    }
     .credentials input {
       width: 360px;
     }
@@ -137,7 +141,9 @@
     .first-last-name input {
       width: 300px;
     }
-
+    .signup-container h3 {
+      font-size: 24px;
+    }
     .credentials input {
       width: 300px;
     }
