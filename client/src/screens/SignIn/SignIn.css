@@ -58,7 +58,7 @@
 }
 
 .signup-container-create {
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 }
 
 .signup-container-create h3 {
@@ -76,7 +76,7 @@
   font-family: 'Roboto', sans-serif;
   width: 350px;
   height: 60px;
-  margin: 20px 0 20px 0;
+  margin: 10px 0 20px 0;
   -webkit-transition: ease-out 0.4s;
   -moz-transition: ease-out 0.4s;
   transition: ease-out 0.4s;
@@ -122,14 +122,14 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-  }
-  .signup-container-create {
-    margin-top: 0;
+    margin-top: 80px;
   }
   .signup-container-create h3 {
     font-size: 40px;
     font-style: italic;
-    margin-top: 80px;
+  }
+  .new-customer-btn {
+    margin-top: 0;
   }
 }
 
@@ -145,7 +145,7 @@
   .new-customer-btn {
     width: 170px;
     height: 60px;
-    margin: 20px 0 20px 0;
+    margin: 10px 0 10px 0;
   }
 }
 
