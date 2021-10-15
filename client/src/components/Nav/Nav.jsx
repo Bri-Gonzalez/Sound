@@ -50,7 +50,7 @@ export default function Nav({ user, handleDrawerOpen, open }) {
           {user ? authenticatedOptions : unauthenticatedOptions}
         </div>
         <div onClick={handleDrawerOpen} className="hamburger">
-          <MenuIcon />
+          <MenuIcon style={{ fontSize: 35, margin: 30 }} />
         </div>
       </div>
     </nav>
