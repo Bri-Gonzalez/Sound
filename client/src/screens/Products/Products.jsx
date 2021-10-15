@@ -9,12 +9,14 @@ export default function Products(props) {
   const [searchResult, setSearchResult] = useState([])
   const [applySort, setApplySort] = useState(false)
   const [sortType, setSortType] = useState('name-ascending')
+  const [isLoaded, setLoaded] = useState(false)
 
   useEffect(() => {
       const fetchProducts = async () => {
         const allProducts = await getProducts()
         setProducts(allProducts)
         setSearchResult(allProducts)
+        setLoaded(true)
       }
       fetchProducts()
   }, [])
@@ -60,8 +62,9 @@ export default function Products(props) {
     <Layout user={props.user}>
       <div className='products-container'>
         <h1 className='shop'><b>SHOP</b></h1>
-          <Search onSubmit={handleSubmit} handleSearch={handleSearch} />
-          <Sort onSubmit={handleSubmit} handleSort={handleSort} />
+        <Search onSubmit={handleSubmit} handleSearch={handleSearch} />
+        <Sort onSubmit={handleSubmit} handleSort={handleSort} />
+        {!isLoaded ? (<h1>Loading...</h1>) : (
           <div className='products'>
               {searchResult.map((product, index) => {
                 return (
@@ -75,6 +78,7 @@ export default function Products(props) {
                 )
               })}
           </div>
+          )}
         </div>
       </Layout>
   )
