@@ -64,7 +64,7 @@
   border-radius: 10px;
   font-size: 15px;
   font-style: italic;
-  font-family: "Roboto", sans-serif;
+  font-family: 'Roboto', sans-serif;
   width: 170px;
   height: 60px;
   margin: 20px 0 20px 0;
@@ -86,7 +86,7 @@
   border-radius: 10px;
   font-size: 15px;
   font-style: italic;
-  font-family: "Roboto", sans-serif;
+  font-family: 'Roboto', sans-serif;
   width: 200px;
   height: 60px;
   margin: 20px 0 20px 0;
@@ -105,5 +105,37 @@
 }
 
 .signup-container .danger:hover:before {
-  content: "CREATE";
+  content: 'CREATE';
+}
+
+@media only screen and (max-width: 1070px) {
+  .signup-container {
+    margin-top: 180px;
+  }
+  .signup-container h3 {
+    margin-top: 180px;
+  }
+  .first-last-name {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .first-last-name input {
+    width: 550px;
+  }
+  .signin-container {
+    display: flex;
+  }
+  .credentials input {
+    width: 550px;
+  }
+  @media only screen and (max-width: 615px) {
+    .first-last-name input {
+      width: 360px;
+    }
+    .credentials input {
+      width: 360px;
+    }
+  }
 }
