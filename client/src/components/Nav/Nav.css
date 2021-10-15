@@ -1,5 +1,5 @@
 .nav {
-  font-family: "Roboto", sans-serif;
+  font-family: 'Roboto', sans-serif;
   display: flex;
   height: 120px;
   width: 100%;
@@ -39,4 +39,23 @@
 .link-welcome {
   font-size: 24px;
   margin: 0 30px;
+}
+@media only screen and (max-width: 950px) {
+  .logo img {
+    width: 180px;
+  }
+}
+
+@media only screen and (max-width: 770px) {
+  .logo img {
+    width: 150px;
+  }
+  /* .nav {
+    display: flex;
+    flex-direction: column;
+  } */
+  .links {
+    display: flex;
+    flex-direction: column;
+  }
 }
