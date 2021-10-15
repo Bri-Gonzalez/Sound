@@ -1,27 +1,17 @@
 import "./Layout.css";
 import Nav from "../Nav/Nav";
 import Footer from "../Footer/Footer";
-
 import { NavLink } from "react-router-dom";
-
 import * as React from "react";
 import { styled, useTheme } from "@mui/material/styles";
 import Box from "@mui/material/Box";
 import Drawer from "@mui/material/Drawer";
 import MuiAppBar from "@mui/material/AppBar";
-import Toolbar from "@mui/material/Toolbar";
 import CssBaseline from "@mui/material/CssBaseline";
-import List from "@mui/material/List";
-import Typography from "@mui/material/Typography";
 import Divider from "@mui/material/Divider";
 import IconButton from "@mui/material/IconButton";
 import ChevronLeftIcon from "@mui/icons-material/ChevronLeft";
 import ChevronRightIcon from "@mui/icons-material/ChevronRight";
-import ListItem from "@mui/material/ListItem";
-import ListItemIcon from "@mui/material/ListItemIcon";
-import ListItemText from "@mui/material/ListItemText";
-import InboxIcon from "@mui/icons-material/MoveToInbox";
-import MailIcon from "@mui/icons-material/Mail";
 import HeadphonesIcon from "@mui/icons-material/Headphones";
 import PersonAddIcon from "@mui/icons-material/PersonAdd";
 import PersonIcon from "@mui/icons-material/Person";
@@ -70,7 +60,6 @@ const DrawerHeader = styled("div")(({ theme }) => ({
   display: "flex",
   alignItems: "center",
   padding: theme.spacing(0, 1),
-  // necessary for content to be below app bar
   ...theme.mixins.toolbar,
   justifyContent: "flex-start",
 }));
@@ -78,10 +67,10 @@ const DrawerHeader = styled("div")(({ theme }) => ({
 const authenticatedOptions = (
   <>
     <NavLink className="link" to="/add-product">
-      <SellIcon /> Sell Product
+      <SellIcon style={{ fontSize: 30 }} /> Sell Product
     </NavLink>
     <NavLink className="link" to="/sign-out">
-      <ExitToAppIcon /> Sign Out
+      <ExitToAppIcon style={{ fontSize: 30 }} /> Sign Out
     </NavLink>
   </>
 );
@@ -89,10 +78,10 @@ const authenticatedOptions = (
 const unauthenticatedOptions = (
   <>
     <NavLink className="link" to="/sign-up">
-      <PersonAddIcon /> Sign Up
+      <PersonAddIcon style={{ fontSize: 30 }} /> Sign Up
     </NavLink>
     <NavLink className="link" to="/sign-in">
-      <PersonIcon /> Sign In
+      <PersonIcon style={{ fontSize: 30 }} /> Sign In
     </NavLink>
   </>
 );
@@ -100,7 +89,7 @@ const unauthenticatedOptions = (
 const alwaysOptions = (
   <>
     <NavLink className="link" to="/products">
-      <HeadphonesIcon /> Products
+      <HeadphonesIcon style={{ fontSize: 30 }} /> Products
     </NavLink>
   </>
 );
@@ -136,12 +125,9 @@ export default function Layout(props) {
           >
             Open
           </div>
-          {/* <Toolbar></Toolbar> */}
         </AppBar>
         <Main open={open}>
           <DrawerHeader />
-          <div className="layout-children">{props.children}</div>
-          <Footer user={props.user} />
         </Main>
         <Drawer
           sx={{
@@ -149,6 +135,7 @@ export default function Layout(props) {
             flexShrink: 0,
             "& .MuiDrawer-paper": {
               width: drawerWidth,
+              background: "rgba(0, 0, 0, 0.8)",
             },
           }}
           variant="persistent"
@@ -158,42 +145,29 @@ export default function Layout(props) {
           <DrawerHeader>
             <IconButton onClick={handleDrawerClose}>
               {theme.direction === "rtl" ? (
-                <ChevronLeftIcon />
+                <ChevronLeftIcon style={{ color: "white", fontSize: 30 }} />
               ) : (
-                <ChevronRightIcon />
+                <ChevronRightIcon style={{ color: "white", fontSize: 30 }} />
               )}
             </IconButton>
           </DrawerHeader>
-          {/* <Divider /> */}
           {props.user && (
-            <div className="link-welcome">Welcome, {props.user.firstname} </div>
+            <>
+              <div className="welcome-layout">
+                Welcome, {props.user.firstname}{" "}
+              </div>
+              <div className="solid"></div>
+            </>
           )}
           <Divider />
-          {alwaysOptions}
-          {props.user ? authenticatedOptions : unauthenticatedOptions}
-          {/* <List>
-            {["Inbox", "Starred", "Send email", "Drafts"].map((text, index) => (
-              <ListItem button key={text}>
-                <ListItemIcon>
-                  {index % 2 === 0 ? <InboxIcon /> : <MailIcon />}
-                </ListItemIcon>
-                <ListItemText primary={text} />
-              </ListItem>
-            ))}
-          </List> */}
-          {/* <Divider />
-          <List>
-            {["All mail", "Trash", "Spam"].map((text, index) => (
-              <ListItem button key={text}>
-                <ListItemIcon>
-                  {index % 2 === 0 ? <InboxIcon /> : <MailIcon />}
-                </ListItemIcon>
-                <ListItemText primary={text} />
-              </ListItem>
-            ))}
-          </List> */}
+          <div className="links-layout">
+            {alwaysOptions}
+            {props.user ? authenticatedOptions : unauthenticatedOptions}
+          </div>
         </Drawer>
       </Box>
+      <div className="layout-children">{props.children}</div>
+      <Footer user={props.user} />
     </div>
   );
 }
