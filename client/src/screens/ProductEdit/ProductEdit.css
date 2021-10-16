@@ -1,5 +1,5 @@
 .product-edit {
-  margin: 180px 0 80px 0;
+  margin: 110px 0 80px 0;
 }
 
 .product-edit h2 {
@@ -66,36 +66,15 @@ textarea:focus {
 }
 
 @media only screen and (max-width: 570px) {
-  
   .product-edit h2 {
     font-size: 36px;
   }
-  
-  .product-edit input {
-    width: 360px;
-  }
-  
-  .product-edit textarea {
-    width: 360px;
-  }
-}
 
-@media only screen and (max-width: 470px) {
   .product-edit input {
-    width: 300px;
+    width: 80vw;
   }
-  
-  .product-edit textarea {
-    width: 300px;
-  }
-}
 
-@media only screen and (max-width: 375px) {
-  .product-edit input {
-    width: 220px;
-  }
-  
   .product-edit textarea {
-    width: 220px;
+    width: 80vw;
   }
 }

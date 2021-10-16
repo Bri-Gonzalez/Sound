@@ -135,7 +135,7 @@ export default function Layout(props) {
             flexShrink: 0,
             "& .MuiDrawer-paper": {
               width: drawerWidth,
-              background: "rgba(0, 0, 0, 0.8)",
+              background: "rgba(0, 0, 0, 0.9)",
             },
           }}
           variant="persistent"
