@@ -1,7 +1,7 @@
 .signin-container {
   display: flex;
   justify-content: center;
-  margin: 150px 0 80px 0;
+  margin: 110px 0 80px 0;
   align-items: center;
   justify-content: space-evenly;
 }
@@ -43,7 +43,7 @@
   border-radius: 10px;
   font-size: 15px;
   font-style: italic;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   width: 170px;
   height: 60px;
   margin: 20px 0 20px 0;
@@ -58,7 +58,7 @@
 }
 
 .signup-container-create {
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 }
 
 .signup-container-create h3 {
@@ -73,10 +73,10 @@
   border-radius: 10px;
   font-size: 15px;
   font-style: italic;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   width: 350px;
   height: 60px;
-  margin: 20px 0 20px 0;
+  margin: 10px 0 20px 0;
   -webkit-transition: ease-out 0.4s;
   -moz-transition: ease-out 0.4s;
   transition: ease-out 0.4s;
@@ -95,7 +95,7 @@
   border-radius: 10px;
   font-size: 15px;
   font-style: italic;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   width: 200px;
   height: 60px;
   margin: 20px 0 20px 0;
@@ -114,7 +114,7 @@
 }
 
 .signin-container .danger:hover:before {
-  content: 'SIGN IN';
+  content: "SIGN IN";
 }
 
 @media only screen and (max-width: 1070px) {
@@ -122,14 +122,14 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-  }
-  .signup-container-create {
-    margin-top: 0;
+    margin-top: 80px;
   }
   .signup-container-create h3 {
     font-size: 40px;
     font-style: italic;
-    margin-top: 80px;
+  }
+  .new-customer-btn {
+    margin-top: 0;
   }
 }
 
@@ -145,7 +145,7 @@
   .new-customer-btn {
     width: 170px;
     height: 60px;
-    margin: 20px 0 20px 0;
+    margin: 10px 0 10px 0;
   }
 }
 
@@ -160,22 +160,11 @@
     font-size: 24px;
   }
   .signin-form-container input {
-    width: 360px;
+    width: 75vw;
   }
   .new-customer-btn {
     width: 170px;
     height: 60px;
     margin: 20px 0 20px 0;
-  }
-}
-@media only screen and (max-width: 450px) {
-  .signin-form-container input {
-    width: 300px;
-  }
-}
-
-@media only screen and (max-width: 375px) {
-  .signin-form-container input {
-    width: 220px;
   }
 }
