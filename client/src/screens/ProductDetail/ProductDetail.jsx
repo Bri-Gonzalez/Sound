@@ -21,10 +21,6 @@ const ProductDetail = (props) => {
     fetchProduct();
   }, [id]);
 
-  // if (!isLoaded) {
-  //   return <h1>Loading...</h1>;
-  // }
-
   const handleDelete = async () => {
     if (props.user) {
       await deleteProduct(product._id);
@@ -36,9 +32,6 @@ const ProductDetail = (props) => {
 
   return (
     <Layout user={props.user}>
-      {/* <br />
-      <br />
-      <br /> */}
       <div className="loading-div">
         {!isLoaded ? (
           <h1>Loading...</h1>

@@ -134,8 +134,6 @@
 
   .shop-now-btn {
     margin-bottom: 10px;
-    /* height: 40px;
-    font-size: 13px; */
   }
 
   .body-imgs {
@@ -173,7 +171,7 @@
 
 @media only screen and (max-width: 570px) {
   .header-img img {
-    height: 365px;
+    height: 375px;
     object-fit: cover;
   }
 
@@ -204,7 +202,7 @@
   }
 
   .header-img img {
-    height: 310px;
+    height: 330px;
   }
 
   .slogan-container {
@@ -252,7 +250,7 @@
 
 @media only screen and (max-width: 395px) {
   .header-img img {
-    height: 265px;
+    height: 270px;
   }
 
   .slogan-container {
@@ -262,7 +260,7 @@
 
   .slogan-container h1 {
     margin: 2px 0;
-    font-size: 30px;
+    font-size: 29px;
   }
 
   .slogan-container h4 {
@@ -275,9 +273,9 @@
   }
 }
 
-@media only screen and (max-width: 355px) {
+@media only screen and (max-width: 360px) {
   .header-img img {
-    height: 235px;
+    height: 240px;
   }
 
   .slogan-container {
@@ -287,7 +285,7 @@
   }
 
   .slogan-container h1 {
-    font-size: 29px;
+    font-size: 27.5px;
   }
 
   .slogan-container h4 {
@@ -311,5 +309,11 @@
 
   .shop-now-btn {
     height: 35px;
+  }
+}
+
+@media only screen and (max-width: 300px) {
+  .slogan-container h1 {
+    font-size: 23px;
   }
 }
