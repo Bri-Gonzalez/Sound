@@ -65,7 +65,7 @@ export default function Products(props) {
         <h1 className='shop'><b>SHOP</b></h1>
         <Search onSubmit={handleSubmit} handleSearch={handleSearch} />
         <Sort onSubmit={handleSubmit} handleSort={handleSort} />
-        {!isLoaded ? <ScaleLoader /> : (
+        {!isLoaded ? <div className='products-loader'><ScaleLoader /></div> : (
           <div className='products'>
               {searchResult.map((product, index) => {
                 return (
