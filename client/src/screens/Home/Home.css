@@ -1,6 +1,5 @@
 .header-img {
   position: relative;
-  /* z-index: -1; */
 }
 
 .header-img img {
@@ -13,14 +12,13 @@
 
 .slogan-container {
   background-color: rgba(0, 0, 0, 0.2);
-  border-radius: 3px;
+  border-radius: 5px;
   position: absolute;
   top: 21%;
   left: 60px;
   padding: 20px;
   color: white;
   text-align: left;
-  /* z-index: 1; */
   font-weight: bolder;
   letter-spacing: 1px;
 }
@@ -226,13 +224,8 @@
     right: 25px;
   }
 
-  /* .slogan-container h1 {
-    margin: 7px 0 2px 0;
-  } */
-
   .slogan-container h4 {
     font-size: 18px;
-    /* margin-top: 10px; */
   }
 
   .shop-now-btn {

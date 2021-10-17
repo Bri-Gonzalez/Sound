@@ -3,6 +3,7 @@ import { useState, useEffect } from 'react'
 import { Layout, Product, Search, Sort } from '../../components'
 import { AZ, ZA, lowestFirst, highestFirst } from '../../utils/sort'
 import { getProducts } from '../../services/products'
+import ScaleLoader from 'react-spinners/ScaleLoader'
 
 export default function Products(props) {
   const [products, setProducts] = useState([])
@@ -64,7 +65,7 @@ export default function Products(props) {
         <h1 className='shop'><b>SHOP</b></h1>
         <Search onSubmit={handleSubmit} handleSearch={handleSearch} />
         <Sort onSubmit={handleSubmit} handleSort={handleSort} />
-        {!isLoaded ? (<h1>Loading...</h1>) : (
+        {!isLoaded ? <ScaleLoader /> : (
           <div className='products'>
               {searchResult.map((product, index) => {
                 return (
