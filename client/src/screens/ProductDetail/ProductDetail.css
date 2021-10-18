@@ -114,6 +114,10 @@
     width: unset;
   }
 
+  .description {
+    text-align: left;
+  }
+
   .name {
     font-size: 40px;
   }
