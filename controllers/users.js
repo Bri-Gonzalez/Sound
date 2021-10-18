@@ -28,6 +28,8 @@ export const signUp = async (req, res) => {
 
     const payload = {
       id: user._id,
+      firstname: user.firstname,
+      lastname: user.lastname,
       email: user.email,
       exp: parseInt(exp.getTime() / 1000),
     }
