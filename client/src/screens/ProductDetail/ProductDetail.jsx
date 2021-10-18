@@ -33,8 +33,7 @@ const ProductDetail = (props) => {
 
   return (
     <Layout user={props.user}>
-      <div className='loading-div'>
-        {!isLoaded ? <ScaleLoader /> : (
+        {!isLoaded ? <div className='loading-details'><ScaleLoader /></div> : (
           <div className='product-detail'>
             <div className='detail-img'>
               <img src={product.imgURL} alt={product.name} />
@@ -63,7 +62,6 @@ const ProductDetail = (props) => {
             </div>
           </div>
         )}
-      </div>
     </Layout>
   );
 };
