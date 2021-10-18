@@ -1,12 +1,15 @@
 .nav {
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   display: flex;
   height: 120px;
-  width: 100vw;
+  width: 100%;
   background-color: black;
   color: white;
   justify-content: space-between;
   align-items: center;
+  border-bottom: 3px solid #a100ff;
+  position: fixed;
+  top: 0;
 }
 
 .nav a {
@@ -14,18 +17,84 @@
   color: white;
   margin: 0 30px;
   font-size: 24px;
+  transition: 250ms;
+}
+
+.nav a:hover {
+  color: #6b9af0;
 }
 
 .logo img {
   width: 250px;
   margin-left: 30px;
 }
+
 .links {
   display: flex;
   margin-right: 30px;
   letter-spacing: 1px;
 }
+
 .link-welcome {
   font-size: 24px;
   margin: 0 30px;
+}
+
+.hamburger {
+  display: none;
+}
+
+@media only screen and (min-width: 1900px) {
+  .nav {
+    height: 140px;
+  }
+}
+
+@media screen and (max-width: 1150px) {
+  .logo img {
+    width: 220px;
+    margin-left: 20px;
+  }
+
+  .nav a {
+    font-size: 20px;
+  }
+
+  .link-welcome {
+    font-size: 20px;
+  }
+}
+
+@media screen and (max-width: 1040px) {
+  .logo img {
+    width: 200px;
+  }
+
+  .nav a {
+    font-size: 18px;
+  }
+
+  .link-welcome {
+    font-size: 18px;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .hamburger {
+    display: contents;
+  }
+
+  .hamburger:hover {
+    cursor: pointer;
+  }
+
+  .links {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .logo img {
+    margin-left: 0.1%;
+  }
 }

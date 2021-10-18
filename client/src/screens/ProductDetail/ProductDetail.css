@@ -1,0 +1,140 @@
+.loading-details {
+  margin: 150px 0 100px 0;
+}
+
+.product-detail {
+  display: flex;
+  margin-top: 40px;
+  padding: 70px 100px 70px 100px;
+  margin-top: 110px;
+  justify-content: center;
+}
+
+.detail-img {
+  margin: 0px 50px 0 0;
+}
+
+.detail-img img {
+  width: 40vw;
+  max-width: 500px;
+  border-radius: 5px;
+}
+
+.detail {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  width: 40vw;
+  min-width: 175px;
+}
+
+.name {
+  font-size: 40px;
+}
+
+.price {
+  font-size: 24px;
+}
+
+.description {
+  font-size: 20px;
+  letter-spacing: 1;
+  margin: 0 0 10px 0;
+}
+
+.overview {
+  font-size: 24px;
+  margin: 5px 0;
+}
+
+.email {
+  font-size: 20px;
+  letter-spacing: 1;
+  margin: 20px 0 40px 0;
+}
+
+.button-container {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.button-container a {
+  justify-content: center;
+  display: flex;
+}
+
+.edit-button {
+  text-decoration: none;
+  color: black;
+  margin: 10px;
+  font-size: 33px;
+}
+
+.edit-button:hover {
+  transform: scale(1.1);
+  transition-duration: 0.3s;
+  cursor: pointer;
+}
+
+.delete-button {
+  color: black;
+  margin: 10px;
+  font-size: 30px;
+}
+
+.delete-button:hover {
+  transform: scale(1.1);
+  transition-duration: 0.3s;
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 1000px) {
+  .product-detail {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+    margin-top: 140px;
+  }
+
+  .detail-img {
+    margin: 0 auto;
+  }
+
+  .detail-img img {
+    width: 70vw;
+    margin-bottom: 0;
+  }
+
+  .detail {
+    margin: 40px 40px 65px 40px ;
+    text-align: center;
+    width: unset;
+  }
+
+  .name {
+    font-size: 40px;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .name {
+    font-size: 35px;
+  }
+
+  .detail-img img {
+    width: 350px;
+  }
+
+  .detail {
+    margin: 40px 50px 65px 50px;
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  .detail-img img {
+    width: 80vw;
+  }
+}

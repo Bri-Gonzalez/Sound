@@ -3,18 +3,21 @@ import { useState, useEffect } from 'react'
 import { Layout, Product, Search, Sort } from '../../components'
 import { AZ, ZA, lowestFirst, highestFirst } from '../../utils/sort'
 import { getProducts } from '../../services/products'
+import ScaleLoader from 'react-spinners/ScaleLoader'
 
 export default function Products(props) {
   const [products, setProducts] = useState([])
   const [searchResult, setSearchResult] = useState([])
   const [applySort, setApplySort] = useState(false)
   const [sortType, setSortType] = useState('name-ascending')
+  const [isLoaded, setLoaded] = useState(false)
 
   useEffect(() => {
       const fetchProducts = async () => {
         const allProducts = await getProducts()
         setProducts(allProducts)
         setSearchResult(allProducts)
+        setLoaded(true)
       }
       fetchProducts()
   }, [])
@@ -57,21 +60,26 @@ export default function Products(props) {
   const handleSubmit = (e) => e.preventDefault()
 
   return (
-      <Layout user={props.user}>
+    <Layout user={props.user}>
+      <div className='products-container'>
+        <h1 className='shop'><b>SHOP</b></h1>
         <Search onSubmit={handleSubmit} handleSearch={handleSearch} />
         <Sort onSubmit={handleSubmit} handleSort={handleSort} />
-        <div className='products'>
-            {searchResult.map((product, index) => {
-              return (
-                  <Product
-                    _id={product._id}
-                    name={product.name}
-                    imgURL={product.imgURL}
-                    price={product.price}
-                    key={index}
-                  />
-              )
-            })}
+        {!isLoaded ? <div className='products-loader'><ScaleLoader /></div> : (
+          <div className='products'>
+              {searchResult.map((product, index) => {
+                return (
+                    <Product
+                      _id={product._id}
+                      name={product.name}
+                      imgURL={product.imgURL}
+                      price={product.price}
+                      key={index}
+                    />
+                )
+              })}
+          </div>
+          )}
         </div>
       </Layout>
   )

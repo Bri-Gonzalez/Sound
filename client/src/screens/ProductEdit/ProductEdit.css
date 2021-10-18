@@ -1,0 +1,80 @@
+.product-edit {
+  margin: 110px 0 80px 0;
+}
+
+.product-edit h2 {
+  font-size: 40px;
+  font-style: italic;
+}
+
+.product-edit form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.product-edit input {
+  height: 60px;
+  width: 520px;
+}
+
+.product-edit textarea {
+  width: 520px;
+  height: 90px;
+}
+
+.product-edit input,
+textarea {
+  margin: 10px;
+  padding: 10px 10px 10px 15px;
+  background-color: rgb(209, 209, 209);
+  border: none;
+  border-radius: 5px;
+  font-size: 15px;
+  font-family: "Roboto", sans-serif;
+}
+
+.product-edit input:focus,
+textarea:focus {
+  outline-color: black;
+}
+
+.product-edit ::placeholder {
+  color: black;
+}
+
+.save-btn {
+  background-color: #6295f2;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  font-size: 15px;
+  font-style: italic;
+  font-family: "Roboto", sans-serif;
+  width: 170px;
+  height: 60px;
+  margin: 20px 0 20px 0;
+  -webkit-transition: ease-out 0.4s;
+  -moz-transition: ease-out 0.4s;
+  transition: ease-out 0.4s;
+}
+
+.save-btn:hover {
+  cursor: pointer;
+  box-shadow: inset 400px 50px 0 0 #a100ff;
+}
+
+@media only screen and (max-width: 570px) {
+  .product-edit h2 {
+    font-size: 36px;
+  }
+
+  .product-edit input {
+    width: 80vw;
+  }
+
+  .product-edit textarea {
+    width: 80vw;
+  }
+}

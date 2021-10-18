@@ -1,0 +1,170 @@
+.signin-container {
+  display: flex;
+  justify-content: center;
+  margin: 110px 0 80px 0;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.signin-form-container form {
+  display: flex;
+  flex-direction: column;
+}
+
+.signin-form-container input {
+  width: 480px;
+  height: 60px;
+  margin: 10px;
+  padding: 10px 10px 10px 15px;
+  background-color: rgb(209, 209, 209);
+  border: none;
+  border-radius: 5px;
+  font-size: 15px;
+}
+
+.signin-form-container h3 {
+  font-size: 40px;
+  font-style: italic;
+}
+
+.signin-form-container ::placeholder {
+  color: black;
+}
+
+.signin-form-container input:focus {
+  outline-color: black;
+}
+
+.sign-in-btn {
+  align-self: center;
+  background-color: #6295f2;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  font-size: 15px;
+  font-style: italic;
+  font-family: "Roboto", sans-serif;
+  width: 170px;
+  height: 60px;
+  margin: 20px 0 20px 0;
+  -webkit-transition: ease-out 0.4s;
+  -moz-transition: ease-out 0.4s;
+  transition: ease-out 0.4s;
+}
+
+.sign-in-btn:hover {
+  cursor: pointer;
+  box-shadow: inset 400px 50px 0 0 #a100ff;
+}
+
+.signup-container-create {
+  margin-bottom: 10px;
+}
+
+.signup-container-create h3 {
+  font-size: 22px;
+}
+
+.new-customer-btn {
+  align-self: center;
+  background-color: #6295f2;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  font-size: 15px;
+  font-style: italic;
+  font-family: "Roboto", sans-serif;
+  width: 350px;
+  height: 60px;
+  margin: 10px 0 20px 0;
+  -webkit-transition: ease-out 0.4s;
+  -moz-transition: ease-out 0.4s;
+  transition: ease-out 0.4s;
+}
+
+.new-customer-btn:hover {
+  cursor: pointer;
+  box-shadow: inset 400px 50px 0 0 #a100ff;
+}
+
+.signin-container .danger {
+  align-self: center;
+  background-color: #e57373;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  font-size: 15px;
+  font-style: italic;
+  font-family: "Roboto", sans-serif;
+  width: 200px;
+  height: 60px;
+  margin: 20px 0 20px 0;
+  -webkit-transition: ease-out 0.4s;
+  -moz-transition: ease-out 0.4s;
+  transition: ease-out 0.4s;
+}
+
+.signin-container .danger:hover {
+  cursor: pointer;
+  box-shadow: inset 400px 50px 0 0 #6295f2;
+}
+
+.signin-container .danger:hover span {
+  display: none;
+}
+
+.signin-container .danger:hover:before {
+  content: "SIGN IN";
+}
+
+@media only screen and (max-width: 1070px) {
+  .signin-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 80px;
+  }
+  .signup-container-create h3 {
+    font-size: 40px;
+    font-style: italic;
+  }
+  .new-customer-btn {
+    margin-top: 0;
+  }
+}
+
+@media only screen and (max-width: 750px) {
+  .signin-form-container h3 {
+    font-size: 30px;
+  }
+
+  .signup-container-create h3 {
+    font-size: 30px;
+    font-style: italic;
+  }
+  .new-customer-btn {
+    width: 170px;
+    height: 60px;
+    margin: 10px 0 10px 0;
+  }
+}
+
+@media only screen and (max-width: 550px) {
+  .signin-form-container h3 {
+    font-size: 24px;
+  }
+  .signup-container-create {
+    margin-bottom: 0;
+  }
+  .signup-container-create h3 {
+    font-size: 24px;
+  }
+  .signin-form-container input {
+    width: 75vw;
+  }
+  .new-customer-btn {
+    width: 170px;
+    height: 60px;
+    margin: 20px 0 20px 0;
+  }
+}

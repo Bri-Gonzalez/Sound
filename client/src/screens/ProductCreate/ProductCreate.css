@@ -1,0 +1,80 @@
+.add-product-container {
+  margin: 110px 0 80px 0;
+}
+
+.add-product-container h2 {
+  font-size: 40px;
+  font-style: italic;
+}
+
+.add-product-container form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.add-product-container input {
+  height: 60px;
+  width: 520px;
+}
+
+.add-product-container textarea {
+  width: 520px;
+  height: 90px;
+}
+
+.add-product-container input,
+textarea {
+  margin: 10px;
+  padding: 10px 10px 10px 15px;
+  background-color: rgb(209, 209, 209);
+  border: none;
+  border-radius: 5px;
+  font-size: 15px;
+  font-family: "Roboto", sans-serif;
+}
+
+.add-product-container input:focus,
+textarea:focus {
+  outline-color: black;
+}
+
+.add-product-container ::placeholder {
+  color: black;
+}
+
+.sell-btn {
+  background-color: #6295f2;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  font-size: 15px;
+  font-style: italic;
+  font-family: "Roboto", sans-serif;
+  width: 170px;
+  height: 60px;
+  margin: 20px 0 20px 0;
+  -webkit-transition: ease-out 0.4s;
+  -moz-transition: ease-out 0.4s;
+  transition: ease-out 0.4s;
+}
+
+.sell-btn:hover {
+  cursor: pointer;
+  box-shadow: inset 400px 50px 0 0 #a100ff;
+}
+
+@media only screen and (max-width: 570px) {
+  .add-product-container h2 {
+    font-size: 36px;
+  }
+
+  .add-product-container input {
+    width: 80vw;
+  }
+
+  .add-product-container textarea {
+    width: 80vw;
+  }
+}

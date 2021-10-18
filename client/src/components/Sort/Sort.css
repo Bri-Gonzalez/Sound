@@ -1,0 +1,41 @@
+.sort-container {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  width: 92.75vw;
+  margin: 20px;
+}
+
+label {
+  font-size: 18px;
+  font-family: "Roboto", sans-serif;
+  font-weight: bold;
+  padding-right: 10px;
+  color: black;
+}
+
+.sort {
+  color: black;
+}
+
+select {
+  cursor: pointer;
+  border: none;
+  font-size: 18px;
+}
+
+select:focus {
+  outline: none;
+}
+
+@media (max-width: 500px) {
+  .sort-container {
+    width: 100%;
+    justify-content: center;
+    margin: 0px;
+  }
+
+  label {
+    padding-right: 5px;
+  }
+}

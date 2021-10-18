@@ -1,0 +1,157 @@
+.signup-container {
+  margin: 110px 0 80px 0;
+}
+
+.signup-container h3 {
+  font-size: 40px;
+  font-style: italic;
+}
+
+.first-last-name {
+  display: flex;
+  justify-content: center;
+}
+
+.first-last-name input {
+  height: 60px;
+  width: 334px;
+  margin: 10px;
+  padding: 10px 10px 10px 15px;
+  background-color: rgb(209, 209, 209);
+  border: none;
+  border-radius: 5px;
+  font-size: 15px;
+}
+
+.first-last-name input:focus {
+  outline-color: black;
+}
+
+.first-last-name ::placeholder {
+  color: black;
+}
+
+.credentials {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.credentials input {
+  height: 60px;
+  width: 687px;
+  margin: 10px;
+  padding: 10px 10px 10px 15px;
+  background-color: rgb(209, 209, 209);
+  border: none;
+  border-radius: 5px;
+  font-size: 15px;
+}
+
+.credentials input:focus {
+  outline-color: black;
+}
+
+.credentials ::placeholder {
+  color: black;
+}
+
+.create-account-btn {
+  background-color: #6295f2;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  font-size: 15px;
+  font-style: italic;
+  font-family: "Roboto", sans-serif;
+  width: 170px;
+  height: 60px;
+  margin: 20px 0 20px 0;
+  -webkit-transition: ease-out 0.4s;
+  -moz-transition: ease-out 0.4s;
+  transition: ease-out 0.4s;
+}
+
+.create-account-btn:hover {
+  cursor: pointer;
+  box-shadow: inset 400px 50px 0 0 #a100ff;
+}
+
+.signup-container .danger {
+  align-self: center;
+  background-color: #e57373;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  font-size: 15px;
+  font-style: italic;
+  font-family: "Roboto", sans-serif;
+  width: 200px;
+  height: 60px;
+  margin: 20px 0 20px 0;
+  -webkit-transition: ease-out 0.4s;
+  -moz-transition: ease-out 0.4s;
+  transition: ease-out 0.4s;
+}
+
+.signup-container .danger:hover {
+  cursor: pointer;
+  box-shadow: inset 400px 50px 0 0 #6295f2;
+}
+
+.signup-container .danger:hover span {
+  display: none;
+}
+
+.signup-container .danger:hover:before {
+  content: "CREATE";
+}
+
+@media only screen and (max-width: 1070px) {
+  .signup-container {
+    margin-bottom: 180px;
+    margin-top: 100px;
+  }
+
+  .first-last-name {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .first-last-name input {
+    width: 550px;
+  }
+
+  .credentials input {
+    width: 550px;
+  }
+}
+
+@media only screen and (max-width: 615px) {
+  .first-last-name input {
+    width: 80vw;
+  }
+
+  .signup-container h3 {
+    font-size: 28px;
+  }
+
+  .credentials input {
+    width: 80vw;
+  }
+}
+
+@media only screen and (max-width: 470px) {
+  .signup-container h3 {
+    font-size: 24px;
+  }
+}
+
+@media only screen and (max-width: 375px) {
+  .signup-container h3 {
+    font-size: 28px;
+  }
+}

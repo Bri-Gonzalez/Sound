@@ -1,5 +1,6 @@
 import './Nav.css'
 import { NavLink } from 'react-router-dom'
+import MenuIcon from '@mui/icons-material/Menu'
 
 const authenticatedOptions = (
   <>
@@ -31,22 +32,20 @@ const alwaysOptions = (
   </>
 )
 
-export default function Nav({ user }) {
+export default function Nav({ user, handleDrawerOpen, open }) {
   return (
     <nav>
       <div className='nav'>
         <NavLink className='logo' to='/'>
-          <img
-            src='https://res.cloudinary.com/dfryxohde/image/upload/v1633966668/SOUND/sound_vivbtp.png'
-            alt='sound-logo'
-          />
+          <img src='https://res.cloudinary.com/dfryxohde/image/upload/v1634164807/SOUND/sound_1_xuavxa.png' alt='sound-logo' />
         </NavLink>
         <div className='links'>
-          {user && (
-            <div className='link-welcome'>Welcome, {user.firstname} </div>
-          )}
+          {user && <div className='link-welcome'>Welcome, {user.firstname} </div>}
           {alwaysOptions}
           {user ? authenticatedOptions : unauthenticatedOptions}
+        </div>
+        <div onClick={handleDrawerOpen} className='hamburger'>
+          <MenuIcon style={{ fontSize: 35, margin: 30 }} />
         </div>
       </div>
     </nav>
