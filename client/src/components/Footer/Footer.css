@@ -144,9 +144,41 @@
   }
 }
 
-@media only screen and (max-width: 470px) {
+@media only screen and (max-width: 500px) {
+  .footer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    height: 400px;
+    padding: 15px 0;
+  }
+
+  .team-container {
+    order: 1;
+    width: 50vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-right: 1px solid white;
+  }
+
+  .sitemap {
+    order: 2;
+    width: 50vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-left: 1px solid white;
+  }
+
+  .made-by-devs {
+    order: 3;
+  }
+
   .team-container p {
-    font-size: 14px;
+    font-size: 15px;
   }
 
   .team-container a {
@@ -154,12 +186,12 @@
   }
 
   .made-by-devs p {
-    margin: 20px 5px;
+    margin: 20px 5px 10px 5px;
     font-size: 16px;
   }
 
   .sitemap p {
-    font-size: 14px;
+    font-size: 15px;
   }
 
   .sitemap a {
@@ -183,94 +215,17 @@
   }
 }
 
-@media only screen and (max-width: 395px) {
-  .team-container {
-    width: 110px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-  .sitemap {
-    width: 110px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-
-  .made-by-devs {
-    width: 110px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-
-  .team-container p {
-    font-size: 12px;
-  }
-
-  .team-container a {
-    font-size: 10px;
-  }
-
-  .made-by-devs p {
-    font-size: 14px;
-  }
-
-  .sitemap p {
-    font-size: 12px;
-  }
-
-  .sitemap a {
-    font-size: 10px;
-  }
-
-  .footer-logo {
-    margin: 0 auto;
-  }
-}
-
 @media only screen and (max-width: 355px) {
-  .team-container {
-    width: 100px;
-  }
-
-  .team-container p {
-    font-size: 10px;
-  }
-
   .team-container a {
-    font-size: 8px;
+    font-size: 10px;
   }
 
   .made-by-devs p {
-    font-size: 12px;
-    margin: 10px 0;
-  }
-
-  .sitemap {
-    width: 100px;
-  }
-
-  .sitemap p {
-    font-size: 10px;
+    font-size: 15px;
+    margin: 0 0 10px 0;
   }
 
   .sitemap a {
-    font-size: 8px;
-  }
-
-  .footer-logo {
-    width: 90px;
-    margin-right: auto;
-    margin-bottom: 10px;
-    margin-left: auto;
-  }
-
-  .footer-github {
-    width: 20px;
-    margin: 0 auto;
+    font-size: 10px;
   }
 }
