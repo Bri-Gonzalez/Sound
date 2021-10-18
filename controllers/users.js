@@ -45,11 +45,13 @@ export const signIn = async (req, res) => {
   try {
     const { email, password } = req.body
     const user = await User.findOne({ email: email }).select(
-      'email password_digest'
+      'firstname lastname email password_digest'
     )
     if (await bcrypt.compare(password, user.password_digest)) {
       const payload = {
         id: user._id,
+        firstname: user.firstname,
+        lastname: user.lastname,
         email: user.email,
         exp: parseInt(exp.getTime() / 1000),
       }
