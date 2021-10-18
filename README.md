@@ -1,10 +1,12 @@
 # Sound
 
-Turn Up The Volume
+Turn Up the Volume, Turn Down the Prices
 
 ## Project Overview
 
 Sound is a app where the user can sell or purchase audio tech. The user will be able to see available products and their details. Once the user creates an account, they can sell their own audio products by adding them to the app.
+
+[Sound](https://sound-2021.netlify.app/)
 
 ## Dependencies
 
@@ -12,14 +14,19 @@ Sound is a app where the user can sell or purchase audio tech. The user will be 
 
 - Express
 - MongoDB
+- Cors
+- Morgan
 - Bcrypt
+- JWT
 
 <b>Front-End:</b>
 
 - React
-- React Router
 - React-Router-Dom
 - Axios
+- Material-UI
+- React Icons
+- React Spinners
 
 ## [Team Expectations](https://docs.google.com/document/d/1Bn4YaElpcLGPLhebpjtfwx3JY8-ktIi10z4a12WZJCw/edit)
 
